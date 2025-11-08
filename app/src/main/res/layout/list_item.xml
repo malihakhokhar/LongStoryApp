@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+
+    <!-- HORIZONTAL LAYOUT -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- CIRCULAR IMAGE -->
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/banner"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="true" />
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Web Developer"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#ff9800"
+                android:layout_marginTop="20dp" />
+
+            <!-- TIME -->
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25 min ago"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+
+    <!-- LINE SEPARATOR -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="#f1eeee"
+        android:layout_below="@id/container" />
+
+    <!-- COMMENT TEXT -->
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a dummy comment for preview"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/view" />
+
+    <!-- SECOND LINE SEPARATOR -->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="#f1eeee"
+        android:layout_below="@id/comment" />
+
+</RelativeLayout>
